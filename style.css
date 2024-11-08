@@ -1,0 +1,178 @@
+
+
+/* Định dạng cho logo */
+.navbar-brand img {
+    width:  50px;
+    
+}
+
+/* Định dạng cho hình ảnh trong carousel */
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 350px;
+}
+
+/* Định dạng cho ảnh trong thumbnail */
+.thumbnail img {
+    width: 100%;
+}
+
+/* Định dạng cho tiêu đề sản phẩm */
+.product-info h4 {
+    margin: 10px 0;
+}
+
+/* Định dạng cho các sao trong đánh giá */
+.ratings .glyphicon {
+    color: gold;
+}
+
+/* Định dạng cho footer */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Định dạng cho chi tiết sản phẩm */
+.product-details {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho hình ảnh trong thumbnail variants */
+.thumbnail-variants img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Định dạng cho container của sản phẩm */
+.product-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Định dạng cho nhãn giảm giá */
+.discount-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #FF0000; /* Màu đỏ tươi */
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+    z-index: 10;
+}
+
+/* Định dạng cho nhãn trạng thái */
+.status-label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #FF8C00; 
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.navbar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient ban đầu */
+    animation: gradientAnimation 10s ease-in-out infinite; /* Hiệu ứng thay đổi mượt mà */
+    transition: background 1s ease; /* Thêm transition để tạo sự mượt mà */
+}
+@keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Màu gradient ban đầu */
+    }
+    25% {
+      background: linear-gradient(to right, #c7a167, #d67c31); /* Màu gradient thay đổi giữa */
+    }
+    50% {
+        background: linear-gradient(to right, #8d8b02, #e99d3a); /* Màu gradient thay đổi giữa */
+      }
+      75% {
+        background: linear-gradient(to right, #009ac9, #5ba022); /* Màu gradient thay đổi giữa */
+      }
+    100% {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Màu gradient trở lại ban đầu */
+    }
+  }
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center; 
+}
+/* Định dạng cho container của logo */
+.navbar-brand {
+    padding: 5px 15px; /* Giảm padding để logo không quá cao */
+    height: 60px; /* Chiều cao bằng với navbar */
+    display: flex;
+    align-items: center;
+}
+
+/* Định dạng cho logo */
+.navbar-brand img {
+    height: 50px; /* Chiều cao cố định cho logo */
+    width: auto; /* Chiều rộng tự động điều chỉnh để giữ tỷ lệ */
+    max-height: 100%; /* Đảm bảo logo không vượt quá chiều cao của navbar-brand */
+    object-fit: contain; /* Đảm bảo logo hiển thị đầy đủ và không bị méo */
+}
+
+/* Định dạng cho navbar items để căn chỉnh với logo */
+.navbar-nav > li > a {
+    line-height: 30px; /* Căn chỉnh chiều cao của các menu items */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white !important; 
+}
+.navbar-nav > li{
+    font-weight: bold;
+    
+}
+
+/* Định dạng cho form tìm kiếm */
+.navbar-form.navbar-left {
+    margin: 13px 0;  /* Căn chỉnh margin trên dưới để căn giữa */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/* Định dạng cho input search */
+.navbar-form .form-group {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Định dạng cho ô input */
+.navbar-form .form-control {
+    height: 34px;
+    vertical-align: middle;
+}
+
+/* Định dạng cho nút search */
+.navbar-form .btn-default {
+    height: 34px;
+    margin-left: 5px;  /* Tạo khoảng cách nhỏ giữa ô input và nút */
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+/* Căn chỉnh các items bên phải */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}

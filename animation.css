@@ -1,0 +1,12 @@
+
+@keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Màu gradient ban đầu */
+    }
+    50% {
+      background: linear-gradient(to right, #e2df0c, #308607); /* Màu gradient thay đổi giữa */
+    }
+    100% {
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Màu gradient trở lại ban đầu */
+    }
+  }
